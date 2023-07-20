@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "redhat.java",
+    "redhat.fabric8-analytics",
+    "sohibe.java-generate-setters-getters",
+    "streetsidesoftware.code-spell-checker",
+    "oderwat.indent-rainbow",
+    "streetsidesoftware.code-spell-checker",
+    "TabNine.tabnine-vscode"
+  ]
+}
