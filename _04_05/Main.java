@@ -8,10 +8,11 @@ public class Main {
   public static void main(String[] args) {
 
     Predicate<Integer> isDivisibleByThree = n -> Math.abs(n) % 3 == 0;
-    ConditionArrayList divisibleByThreeListy = new ConditionArrayList(isDivisibleByThree);
+    ConditionArrayList divisibleByThreeListy = new ConditionArrayList(
+        isDivisibleByThree);
 
-    ConditionArrayList divisibleByThreeListy2 = new ConditionArrayList(isDivisibleByThree,
-        1, 2, 3, 4, 5, 6, 9);
+    ConditionArrayList divisibleByThreeListy2 = new ConditionArrayList(
+        isDivisibleByThree, 1, 2, 3, 4, 5, 6, 9);
 
     ArrayList<Integer> numsList = new ArrayList<>();
     numsList.add(1);
@@ -20,9 +21,14 @@ public class Main {
     numsList.add(6);
     numsList.add(13);
 
-    // ConditionArrayList divisibleByThreeListy3 =
-    // new ConditionArrayList(isDivisibleByThree,
-    // numsList);
+    ConditionArrayList divisibleByThreeListy3 = new ConditionArrayList(
+        isDivisibleByThree, numsList);
+
+    Predicate<Integer> isDivisibleBySix = n -> Math.abs(n) % 6 == 0;
+    ConditionArrayList divisibleBySix = new ConditionArrayList(isDivisibleBySix,
+        divisibleByThreeListy2);
+
+    System.out.println(divisibleBySix);
 
   }
 }
